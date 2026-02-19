@@ -853,55 +853,73 @@
         </div>
     </section>
 
-    <!-- Veille Technologique -->
-    <section id="veille">
-        <h2>Veille Technologique</h2>
+   <!-- Veille Technologique -->
+<section id="veille">
+    <h2>Veille Technologique</h2>
+
+    <div class="card">
+        <h3>🔍 Ma démarche de veille</h3>
+        <p>
+            La veille technologique est essentielle dans le domaine informatique en constante évolution.
+            Je me tiens régulièrement informé des nouvelles technologies, des tendances du secteur et des
+            meilleures pratiques professionnelles.
+        </p>
+    </div>
+
+    <div class="grid">
         <div class="card">
-            <h3>🔍 Ma démarche de veille</h3>
-            <p>
-                La veille technologique est essentielle dans le domaine informatique en constante évolution. 
-                Je me tiens régulièrement informé des nouvelles technologies, des tendances du secteur et des 
-                meilleures pratiques professionnelles.
+            <h3>📰 Mes sources</h3>
+            <ul class="styled-list">
+                <li>Sites spécialisés (Developpez.com, JDN, etc.)</li>
+                <li>Blogs techniques et documentation officielle</li>
+                <li>Réseaux sociaux professionnels (LinkedIn, Twitter)</li>
+                <li>Podcasts et chaînes YouTube tech</li>
+                <li>Newsletters spécialisées</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🎯 Thématiques suivies</h3>
+            <ul class="styled-list">
+                <li>Cybersécurité (authentification, phishing, mots de passe)</li>
+                <li>Développement web & frameworks</li>
+                <li>Cloud & virtualisation</li>
+                <li>DevOps (CI/CD, automatisation)</li>
+                <li>Bonnes pratiques (RGPD, sécurité applicative)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🧠 Sujet de veille : Passkeys (connexion sans mot de passe)</h3>
+            <p style="color: var(--text-muted); margin-bottom: 1rem;">
+                Les <strong>passkeys</strong> permettent de se connecter à un service sans mot de passe, en s’appuyant
+                sur une authentification forte (empreinte, Face ID, code PIN) et des clés cryptographiques.
+                L’objectif : réduire le phishing et les fuites de mots de passe.
+            </p>
+
+            <h4 style="color: var(--primary); margin-top: 1rem; margin-bottom: 0.6rem;">✅ Pourquoi c’est important ?</h4>
+            <ul class="styled-list">
+                <li>Limite fortement le <strong>phishing</strong> (pas de mot de passe à voler)</li>
+                <li>Réduit les risques liés aux <strong>mots de passe faibles</strong> ou réutilisés</li>
+                <li>Améliore l’expérience utilisateur (connexion rapide et sécurisée)</li>
+            </ul>
+
+            <h4 style="color: var(--primary); margin-top: 1rem; margin-bottom: 0.6rem;">🔐 Principe technique (résumé)</h4>
+            <ul class="styled-list">
+                <li>Une paire de clés est utilisée : <strong>clé publique</strong> (serveur) / <strong>clé privée</strong> (appareil)</li>
+                <li>La clé privée ne quitte pas l’appareil</li>
+                <li>La connexion se fait via un défi cryptographique (signature)</li>
+            </ul>
+
+            <h4 style="color: var(--primary); margin-top: 1rem; margin-bottom: 0.6rem;">📌 Exemple d’usage</h4>
+            <p style="color: var(--text-muted);">
+                Connexion Google/Microsoft/Apple avec une passkey : on valide avec biométrie ou code verrouillage,
+                et le service vérifie la signature cryptographique.
             </p>
         </div>
-
-        <div class="grid">
-            <div class="card">
-                <h3>📰 Mes sources</h3>
-                <ul class="styled-list">
-                    <li>Sites spécialisés (Developpez.com, JDN, etc.)</li>
-                    <li>Blogs techniques et documentation officielle</li>
-                    <li>Réseaux sociaux professionnels (LinkedIn, Twitter)</li>
-                    <li>Podcasts et chaînes YouTube tech</li>
-                    <li>Newsletters spécialisées</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3>🎯 Thématiques suivies</h3>
-                <ul class="styled-list">
-                    <li>Langages et frameworks de développement</li>
-                    <li>Cybersécurité et protection des données</li>
-                    <li>Cloud computing et virtualisation</li>
-                    <li>Intelligence artificielle et machine learning</li>
-                    <li>DevOps et automatisation</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3>📝 Articles récents</h3>
-                <p style="color: var(--text-muted); margin-bottom: 1rem;">
-                    Retrouvez ici mes dernières synthèses et analyses technologiques :
-                </p>
-                <ul class="styled-list">
-                    <li>Évolutions récentes en matière de cybersécurité</li>
-                    <li>Nouveaux frameworks de développement web</li>
-                    <li>Tendances du cloud computing</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
+    </div>
+</section>
+    
     <!-- Mon Entreprise -->
     <section id="entreprise">
         <h2>Mon Entreprise</h2>
@@ -974,38 +992,42 @@
                 </form>
             </div>
 
-            <div class="contact-info">
-                <h3 style="margin-bottom: 2rem;">Informations de contact</h3>
-                <div class="contact-item">
-                    <div class="contact-icon">📧</div>
-                    <div>
-                        <strong>Email</strong>
-                        <p style="color: var(--text-muted); margin: 0;"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a1d7ced5d3c48fc4ccc0c8cde1c4d9c4ccd1cdc48fc2cecc">[email&#160;protected]</a></p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">📱</div>
-                    <div>
-                        <strong>Téléphone</strong>
-                        <p style="color: var(--text-muted); margin: 0;">+33 X XX XX XX XX</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">📍</div>
-                    <div>
-                        <strong>Localisation</strong>
-                        <p style="color: var(--text-muted); margin: 0;">École Iris, France</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">💼</div>
-                    <div>
-                        <strong>LinkedIn</strong>
-                        <p style="color: var(--text-muted); margin: 0;">linkedin.com/in/votre-profil</p>
-                    </div>
-                </div>
-            </div>
+          <div class="contact-info">
+    <h3 style="margin-bottom: 2rem;">Informations de contact</h3>
+
+    <div class="contact-item">
+        <div class="contact-icon">📧</div>
+        <div>
+            <strong>Email</strong>
+            <p style="color: var(--text-muted); margin: 0;">
+                <a href="mailto:fri.younesfri95@gmail.com" style="color: var(--text-muted); text-decoration: none;">
+                    fri.younesfri95@gmail.com
+                </a>
+            </p>
         </div>
+    </div>
+
+    <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div>
+            <strong>Localisation</strong>
+            <p style="color: var(--text-muted); margin: 0;">École Iris, France</p>
+        </div>
+    </div>
+
+    <div class="contact-item">
+        <div class="contact-icon">💼</div>
+        <div>
+            <strong>LinkedIn</strong>
+            <p style="color: var(--text-muted); margin: 0;">
+                <a href="https://www.linkedin.com/in/younes-fri-54a6773b1/" target="_blank" rel="noopener noreferrer"
+                   style="color: var(--text-muted); text-decoration: none;">
+                    linkedin.com/in/younes-fri-54a6773b1
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
     </section>
 
     <!-- Footer -->
