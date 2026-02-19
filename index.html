@@ -853,16 +853,21 @@
         </div>
     </section>
 
-   <!-- Veille Technologique -->
+  <!-- Veille Technologique -->
 <section id="veille">
     <h2>Veille Technologique</h2>
 
     <div class="card">
         <h3>🔍 Ma démarche de veille</h3>
         <p>
-            La veille technologique est essentielle dans le domaine informatique en constante évolution.
-            Je me tiens régulièrement informé des nouvelles technologies, des tendances du secteur et des
-            meilleures pratiques professionnelles.
+            La veille technologique est essentielle en informatique car les outils, les risques et les bonnes pratiques
+            évoluent en permanence. Pour rester à jour, j’organise ma veille de manière régulière : je sélectionne des sources
+            fiables, je lis des articles (sécurité, dev, systèmes), je note les idées importantes et je fais une synthèse courte
+            afin de pouvoir réutiliser ces informations dans mes projets et en contexte professionnel.
+        </p>
+        <p style="margin-top: 1rem;">
+            Mon objectif est de comprendre les nouveautés, mais aussi de savoir les expliquer simplement et de mesurer
+            leur impact sur la sécurité, la performance et l’expérience utilisateur.
         </p>
     </div>
 
@@ -870,51 +875,72 @@
         <div class="card">
             <h3>📰 Mes sources</h3>
             <ul class="styled-list">
-                <li>Sites spécialisés (Developpez.com, JDN, etc.)</li>
-                <li>Blogs techniques et documentation officielle</li>
-                <li>Réseaux sociaux professionnels (LinkedIn, Twitter)</li>
-                <li>Podcasts et chaînes YouTube tech</li>
-                <li>Newsletters spécialisées</li>
+                <li>Documentation officielle (Microsoft, Google, Mozilla, OWASP…)</li>
+                <li>Sites spécialisés (Developpez.com, JDN, blogs techniques)</li>
+                <li>Réseaux professionnels (LinkedIn) et comptes sécurité</li>
+                <li>Vidéos / conférences (YouTube, replays d’événements tech)</li>
+                <li>Newsletters et résumés hebdomadaires</li>
             </ul>
         </div>
 
         <div class="card">
             <h3>🎯 Thématiques suivies</h3>
             <ul class="styled-list">
-                <li>Cybersécurité (authentification, phishing, mots de passe)</li>
-                <li>Développement web & frameworks</li>
-                <li>Cloud & virtualisation</li>
-                <li>DevOps (CI/CD, automatisation)</li>
-                <li>Bonnes pratiques (RGPD, sécurité applicative)</li>
+                <li>Cybersécurité : authentification, phishing, protection des comptes</li>
+                <li>Développement web : bonnes pratiques, frameworks, performances</li>
+                <li>Cloud & virtualisation : déploiement, services, sauvegardes</li>
+                <li>DevOps : automatisation, CI/CD, monitoring</li>
+                <li>RGPD & sécurité applicative : gestion des données, OWASP</li>
             </ul>
         </div>
 
         <div class="card">
             <h3>🧠 Sujet de veille : Passkeys (connexion sans mot de passe)</h3>
+
             <p style="color: var(--text-muted); margin-bottom: 1rem;">
-                Les <strong>passkeys</strong> permettent de se connecter à un service sans mot de passe, en s’appuyant
-                sur une authentification forte (empreinte, Face ID, code PIN) et des clés cryptographiques.
-                L’objectif : réduire le phishing et les fuites de mots de passe.
+                Les <strong>passkeys</strong> sont une méthode d’authentification qui permet de se connecter à un service
+                sans utiliser de mot de passe. À la place, on valide la connexion via une authentification locale sur l’appareil
+                (empreinte digitale, Face ID ou code PIN). L’objectif principal est de <strong>réduire les attaques</strong>
+                liées aux mots de passe (phishing, fuites de bases de données, mots de passe réutilisés).
             </p>
 
-            <h4 style="color: var(--primary); margin-top: 1rem; margin-bottom: 0.6rem;">✅ Pourquoi c’est important ?</h4>
+            <h4 style="color: var(--primary); margin-top: 1rem; margin-bottom: 0.6rem;">✅ Pourquoi c’est une évolution importante ?</h4>
             <ul class="styled-list">
-                <li>Limite fortement le <strong>phishing</strong> (pas de mot de passe à voler)</li>
-                <li>Réduit les risques liés aux <strong>mots de passe faibles</strong> ou réutilisés</li>
-                <li>Améliore l’expérience utilisateur (connexion rapide et sécurisée)</li>
+                <li>Les mots de passe sont souvent <strong>faibles</strong> ou <strong>réutilisés</strong> sur plusieurs sites</li>
+                <li>Le <strong>phishing</strong> fonctionne car l’utilisateur peut “donner” son mot de passe sans le savoir</li>
+                <li>Avec une passkey, il n’y a pas de mot de passe à voler ou à saisir sur un faux site</li>
+                <li>Connexion plus simple : moins d’oubli, moins de réinitialisations</li>
             </ul>
 
-            <h4 style="color: var(--primary); margin-top: 1rem; margin-bottom: 0.6rem;">🔐 Principe technique (résumé)</h4>
+            <h4 style="color: var(--primary); margin-top: 1rem; margin-bottom: 0.6rem;">🔐 Comment ça marche (explication simple)</h4>
+            <p style="color: var(--text-muted); margin-bottom: 1rem;">
+                Le service enregistre une <strong>clé publique</strong>, tandis que l’appareil conserve une <strong>clé privée</strong>
+                (elle ne quitte pas l’appareil). Lors d’une connexion, le service envoie un défi ; l’appareil signe ce défi
+                avec la clé privée, et le service vérifie la signature avec la clé publique. Résultat : l’utilisateur prouve
+                son identité sans transmettre de secret réutilisable.
+            </p>
+
+            <h4 style="color: var(--primary); margin-top: 1rem; margin-bottom: 0.6rem;">🧪 Ce que j’ai retenu / avantages</h4>
             <ul class="styled-list">
-                <li>Une paire de clés est utilisée : <strong>clé publique</strong> (serveur) / <strong>clé privée</strong> (appareil)</li>
-                <li>La clé privée ne quitte pas l’appareil</li>
-                <li>La connexion se fait via un défi cryptographique (signature)</li>
+                <li>Moins de risques de compromission des comptes (phishing beaucoup moins efficace)</li>
+                <li>Meilleure expérience utilisateur (connexion rapide)</li>
+                <li>Réduction de la charge support liée aux mots de passe (oublis, reset…)</li>
+                <li>Intéressant pour les entreprises : améliore la sécurité sans compliquer l’usage</li>
             </ul>
 
-            <h4 style="color: var(--primary); margin-top: 1rem; margin-bottom: 0.6rem;">📌 Exemple d’usage</h4>
+            <h4 style="color: var(--primary); margin-top: 1rem; margin-bottom: 0.6rem;">⚠️ Limites / points d’attention</h4>
+            <ul class="styled-list">
+                <li>Gestion multi-appareils : il faut bien comprendre la synchronisation (téléphone, PC…)</li>
+                <li>En entreprise, adoption progressive : politiques internes, compatibilité, formation</li>
+                <li>Besoin d’un plan de secours (récupération du compte) en cas de perte de l’appareil</li>
+            </ul>
+
+            <h4 style="color: var(--primary); margin-top: 1rem; margin-bottom: 0.6rem;">📌 Conclusion</h4>
             <p style="color: var(--text-muted);">
-                Connexion Google/Microsoft/Apple avec une passkey : on valide avec biométrie ou code verrouillage,
-                et le service vérifie la signature cryptographique.
+                Les passkeys représentent une amélioration concrète de la sécurité car elles limitent les attaques liées
+                aux mots de passe tout en rendant la connexion plus simple. C’est une technologie que je vais continuer
+                à suivre car elle devient de plus en plus utilisée dans les services en ligne et a un réel intérêt en contexte
+                professionnel.
             </p>
         </div>
     </div>
